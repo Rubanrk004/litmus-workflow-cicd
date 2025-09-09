@@ -69,7 +69,7 @@ pipeline {
 
         stage('Verify Chaos Experiment') {
             steps {
-                withCredentials([file(credentialsId: '4e02ff17-2dd3-4f42-bc24-9ee574aad262', variable: 'KUBECONFIG_FILE')]) {
+                withCredentials([file(credentialsId: 'Jenkins-cred', variable: 'KUBECONFIG_FILE')]) {
                     sh '''
                         echo "Verifying chaos workflow run..."
                         export KUBECONFIG=$KUBECONFIG_FILE
