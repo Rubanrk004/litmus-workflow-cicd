@@ -9,7 +9,7 @@ pipeline {
         APP_NAMESPACE = "microservices"
 
         // Path to the chaos experiment YAML inside repo
-        EXPERIMENT = "litmus/d694a69d-e20d-4aa4-940d-64cb41b5eb79/cicd-pod-delete.yaml"
+        EXPERIMENT = "litmus/d694a69d-e20d-4aa4-940d-64cb41b5eb79/cicd-pod-delete-cart.yaml"
 
         KUBECTL = "$HOME/bin/kubectl"
     }
