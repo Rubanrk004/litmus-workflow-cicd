@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Rubanrk004/litmus-chaos-gitops.git'
+                git branch: 'main', url: 'https://github.com/Rubanrk004/litmus-workflow-cicd.git'
             }
         }
 
